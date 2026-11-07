@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sebastian Medina</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Sebastian Medina - Página principal">
-    <meta name="author" content="Sebastian Medina">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rubia M. Francesco</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Sebastian Medina - Course assignment page web development.">
+    <meta name="author" content="Rubia M. Francesco">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-            <a href="#" target="_blank">Final Project</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
 
     <main>
         <h1>Sebastian Medina</h1>
-        
-        <div class="card-grid">
+
+        <div class="cards-container">
             <section class="card">
-                <h2>About me</h2>
-                <img src="images/profile.jpg" alt="Foto de perfil de Sebastian Medina" width="200" height="200">
-                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <div class="profile-section">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate quisquam, itaque dolores tempora vero at voluptates ex, perspiciatis, quibusdam minima! Perspiciatis optio veniam laborum voluptate suscipit eum culpa architecto?</p>
+                        <img src="images/profile.jpg" alt="Sebastian Medina" class="profile-img">
+                    </div>
+
+                    <h3>Caracas, Venezuela</h3>
+                    <hr>
+
+                    <div class="flag-section">
+                        <figure>
+                            <img src="images/country.webp" alt="Caracas, Venezuela" class="flag-img">
+                            <figcaption>Caracas, Venezuela</figcaption>
+                        </figure>
+                        <p>Venezuela is the greatest country, some might say, of all time. May not be the best economy, and may have been struggling these last 30 years, but it's the greatest culture you'll ever find.</p>
+                    </div>
+                </div>
             </section>
 
             <section class="card">
-                <h2>Country / Region of Origin</h2>
-                <img src="images/country.webp" alt="Imagen representativa de mi país o región" width="200" height="200">
-                <p>Write here interesting information about your country, city or region and why it is special to you.</p>
+                <h2>Web Dev Resources</h2>
+                <div class="card-content">
+                    <ul>
+                        <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+                        <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Sebastian Medina | Caracas, VE</p>
+        <p>&copy;<span id="currentyear"></span> Sebastian Medina - Caracas, Venezuela from Chile</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>
