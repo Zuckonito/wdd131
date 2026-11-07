@@ -1,0 +1,23 @@
+@media (min-width: 640px) {
+  /* Ocultar botón de hamburguesa en pantallas grandes */
+  #menu {
+    display: none;
+  }
+
+  /* Mostrar navegación horizontal con CSS Flex */
+  nav {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Cuadrícula de 3 columnas para la galería */
+  .res-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
